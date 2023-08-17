@@ -1,0 +1,47 @@
+<div class="lat">
+    <label for="lat">
+        <span>
+            <?= __('Latitude') ?>
+        </span>
+        <div>
+            <input type="text" name="lat" class="lat" id="lat" data-validate="{required:true}">
+        </div>
+    </label>
+</div>
+<div class="lon">
+    <label for="lon">
+         <span>
+            <?= __('Longitude') ?>
+        </span>
+        <div>
+            <input type="text" name="lon" class="lon" id="lon">
+        </div>
+    </label>
+</div>
+<div class="btn">
+    <button id="submit-weather" class="action submit primary" title="<?php echo __('Submit') ?>">
+        <span><?= __('Submit') ?></span>
+    </button>
+</div>
+<div id="weather-data" class="weather-data">
+        <p>City: <span id="city"></span></p>
+        <p>Country: <span id="country"></span></p>
+        <p>Description: <span id="desc"></span></p>
+        <p>Temperature(f): <span id="temperature"></span></p>
+        <p>Feels like(f): <span id="feels_like"></span></p>
+        <p>Pressure(hPa): <span id="pressure"></span></p>
+        <p>Humidity(%): <span id="humidity"></span></p>
+        <p>Wind speed(m/s): <span id="wind_speed"></span></p>
+        <p>Sunrise: <span id="sunrise"></span></p>
+        <p>Sunset: <span id="sunset"></span></p>
+        <p>Latitude: <span id="latitude"></span></p>
+        <p>Longitude: <span id="longitude"></span></p>
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Invade_OpenWeather/js/openweather" : {
+            }
+        }
+    }
+</script>

@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="openweather_tab" translate="label" sortOrder="5">
+            <label>Store Locator</label>
+        </tab>
+
+        <section id="openweather" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="10" translate="label">
+            <label>Open Weather configuration</label>
+            <tab>openweather_tab</tab>
+            <resource>Invade_OpenWeather::api_key</resource>
+
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Api Key</label>
+                <comment>Configuring a StoreLocator functionality</comment>
+                <field id="api_key" translate="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" type="text">
+                    <label>Set Api key</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
+
